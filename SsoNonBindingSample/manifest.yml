@@ -1,0 +1,9 @@
+applications:
+- name: jwtsteeltoedemo
+  disk_quota: 1G
+  env:
+    SECURITY__OAUTH2__CLIENT__JWTKEYURL: https://astakhov.login.run.pivotal.io/token_keys
+  instances: 1
+  memory: 1G
+  random-route: true
+  stack: cflinuxfs2
